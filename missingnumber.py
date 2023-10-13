@@ -1,13 +1,13 @@
 ##cpode to find missing number
 class Solution:
-    def missingNumber(self,array,n):
+    def missingNumber(self,array,N):
         # code here
         for n in array:
-            k= n+1 or n-1
+            k= n+1 
     
             if k not in array:
-                return k
+                print(k)
     
 s1=Solution()
-A=[1,2,3,4,5,7]
-s1.missingNumber(A,7)
+A=[1,2,3,5]
+s1.missingNumber(A,5)
